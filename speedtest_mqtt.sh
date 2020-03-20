@@ -8,7 +8,7 @@ PORT=$(cat $(dirname $0)/config.json | jq -r '.PORT')
 SYSTEM=$(cat $(dirname $0)/config.json | jq -r '.SYSTEM')
 
 echo -n "Executing speedtest-cli... "
-/usr/local/bin/speedtest-cli --json > ${SPEEDTEST_FILE}
+$(which speedtest-cli) --json > ${SPEEDTEST_FILE}
 echo "OK"
 
 download_bits=$(cat ${SPEEDTEST_FILE} | jq -r '.download')

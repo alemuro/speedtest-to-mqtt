@@ -1,5 +1,5 @@
 requirements:
-	sudo apt install jq speedtest-cli bc
+	sudo apt install -y jq speedtest-cli bc
 	sudo npm i -g mqtt-cli
 
 install: requirements
