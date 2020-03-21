@@ -5,4 +5,4 @@ requirements:
 install: requirements
 	sudo mkdir -p /srv/speedtest-to-mqtt
 	sudo cp config.json speedtest_mqtt.sh /srv/speedtest-to-mqtt/
-	sudo bash -c "echo '*/15 * * * * root /bin/bash /srv/speedtest-to-mqtt/speedtest_mqtt.sh' > /etc/cron.d/speedtest_mqtt.cron"
+	sudo bash -c "echo '*/15 * * * * root /bin/bash /srv/speedtest-to-mqtt/speedtest_mqtt.sh' > /etc/cron.d/speedtest-mqtt"
